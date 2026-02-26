@@ -5,7 +5,13 @@ body{
     background: #f7f7f7;
 }
 
-/*Carrosel*/
+header{
+  position: absolute;
+  z-index: 10; 
+  width: 100%;
+}
+
+/*--CAROUSEL--*/
 #carouselBiotechFade {
   height: 800px;
   overflow: hidden;
@@ -29,46 +35,53 @@ body{
   }
 }
 
+.purple-opacity{
+  background: rgba(78, 30, 112, 0.7); 
+  width: 100%; 
+  height: 100%; 
+  position: absolute; 
+  z-index: 10;
+}
 
+/*--NAVBAR--*/
 /* background roxo com hover */
 #background{
-background-color: transparent;
-width: 100;
-
+  background-color: transparent;
+  width: 100%;
 }
 
 #background:hover{
-    background-color: #8A2BE2;
-    transition: 1.3s;
+  background-color: #471477;
+  transition: 0.5s;
 }
-
 
 /* efeito da barra azul ao passar o mouse*/
 #background .nav-link {
-    color: black;
-    padding: 8px 15px;
-
-    background: linear-gradient(aquamarine, aquamarine);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: 0% 2px;
-    transition: background-size 1s ease;
-   
+  color: #fff;
+  margin: 0 5px;  
+  display: block;
+  background: linear-gradient(aquamarine, aquamarine);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0% 2px;
+  transition: background-size 1s ease;
 }
 
 #background .nav-link:hover{
-    animation: linha 1.3s forwards;
+  animation: linha 1.3s forwards;
 }
+
+
 /* animação vindo da esquerda para direita */
 @keyframes linha{
-    from{
-        background-size: 15% 2px;
-        background-position: left bottom;
-    }
+  from{
+      background-size: 25% 2px;
+      background-position: left bottom;
+  }
 
-    to {
-         background-size: 90% 2px;
-         background-position: left bottom;
-    }
+  to {
+        background-size: 100% 2px;
+        background-position: left bottom;
+  }
 }
 
