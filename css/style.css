@@ -4,7 +4,6 @@ body{
     font-size: 1em;
     background: #f7f7f7;
 }
-<<<<<<< Updated upstream
 
 header{
   position: absolute;
@@ -32,7 +31,6 @@ header{
 @media (max-width: 768px){
   #carouselBiotechFade{
     height: 600px;
-    border: 1px solid red;
   }
 }
 
@@ -45,35 +43,36 @@ header{
 }
 
 /*--NAVBAR--*/
-/* background roxo com hover */
-#background{
+/* background roxo com hover*/
+.navbar{
   background-color: transparent;
   width: 100%;
 }
 
-#background:hover{
+.navbar:hover{
   background-color: #471477;
   transition: 0.5s;
-}
+} 
 
-/* efeito da barra azul ao passar o mouse*/
-#background .nav-link {
+/*efeito da barra azul ao passar o mouse*/
+ .navbar .nav-link {
   color: #fff;
-  margin: 0 5px;  
+  margin: 0 5px;
   display: block;
   background: linear-gradient(aquamarine, aquamarine);
   background-repeat: no-repeat;
   background-position: left bottom;
-  background-size: 0% 2px;
+  background-size: 0 2px;
   transition: background-size 1s ease;
 }
-
-#background .nav-link:hover{
+.navbar .nav-link:hover{
   animation: linha 1.3s forwards;
+} 
+.navbar .nav-item{
+  margin: 5px;;
 }
-
-
 /* animação vindo da esquerda para direita */
+
 @keyframes linha{
   from{
       background-size: 25% 2px;
@@ -86,9 +85,8 @@ header{
   }
 }
 
-#test{
-    
-}
+
+
 
 #subtitulo{
     font-weight: bold;
@@ -130,47 +128,4 @@ header{
     color: white;
     font-size: 30px;
 }
-=======
-/* background roxo com hover */
-#background{
-background-color: transparent;
-width: 100;
 
-}
-
-#background:hover{
-    background-color: #8A2BE2;
-    transition: 1.3s;
-}
-
-
-/* efeito da barra azul ao passar o mouse*/
-#background .nav-link {
-    color: black;
-    padding: 8px 15px;
-
-    background: linear-gradient(aquamarine, aquamarine);
-    background-repeat: no-repeat;
-    background-position: left bottom;
-    background-size: 0% 2px;
-    transition: background-size 1s ease;
-   
-}
-
-#background .nav-link:hover{
-    animation: linha 1.3s forwards;
-}
-/* animação vindo da esquerda para direita */
-@keyframes linha{
-    from{
-        background-size: 15% 2px;
-        background-position: left bottom;
-    }
-
-    to {
-         background-size: 90% 2px;
-         background-position: left bottom;
-    }
-}
-
->>>>>>> Stashed changes
