@@ -4,6 +4,7 @@ body{
     font-size: 1em;
     background: #f7f7f7;
 }
+<<<<<<< Updated upstream
 
 header{
   position: absolute;
@@ -129,3 +130,47 @@ header{
     color: white;
     font-size: 30px;
 }
+=======
+/* background roxo com hover */
+#background{
+background-color: transparent;
+width: 100;
+
+}
+
+#background:hover{
+    background-color: #8A2BE2;
+    transition: 1.3s;
+}
+
+
+/* efeito da barra azul ao passar o mouse*/
+#background .nav-link {
+    color: black;
+    padding: 8px 15px;
+
+    background: linear-gradient(aquamarine, aquamarine);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 0% 2px;
+    transition: background-size 1s ease;
+   
+}
+
+#background .nav-link:hover{
+    animation: linha 1.3s forwards;
+}
+/* animação vindo da esquerda para direita */
+@keyframes linha{
+    from{
+        background-size: 15% 2px;
+        background-position: left bottom;
+    }
+
+    to {
+         background-size: 90% 2px;
+         background-position: left bottom;
+    }
+}
+
+>>>>>>> Stashed changes
