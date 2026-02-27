@@ -85,3 +85,47 @@ header{
   }
 }
 
+#test{
+    
+}
+
+#subtitulo{
+    font-weight: bold;
+}
+
+#titulo-evento{
+    font-weight: bold;
+}
+.sobre {
+  background-color: #f5f5f5;
+}
+
+.card-box {
+  background: #e9e6ef;
+  border-radius: 6px;
+  transition: 0.3s ease;
+}
+
+.card-box:hover {
+  transform: translateY(-5px);
+}
+
+.icon-circulo {
+  width: 70px;
+  height: 70px;
+  background: #8A2BE2;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  margin:auto;
+}
+
+
+.icon-circulo i{
+    color: white;
+    font-size: 30px;
+}
