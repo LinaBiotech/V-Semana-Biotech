@@ -225,3 +225,57 @@ header{
   font-size: 30px;
 }
 
+/* card de programação */
+
+.card-prog{
+  background: #e9e6ef;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+/* header */
+.header-prog{
+  background: linear-gradient(90deg, #8A2BE2, #a855f7);
+  padding: 20px;
+}
+
+/* items da programação */
+#conteudo-geral-prog .d-flex{
+  align-items: center !important;
+}
+
+/* background da lista da prog com hover */
+.card-prog .d-flex{
+  padding: 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card-prog .d-flex:hover{
+  background-color: #dfdce4;
+  transform: translateX(5px);
+  cursor: pointer;
+}
+
+/* horario */
+.horario-icon{
+  color: #8A2BE2;
+  font-size: 20px;
+}
+
+.horario {
+  color: #8A2BE2;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.badge-custom{
+  display: flex;
+  background: #d4c7f1;
+  color: #890ec2;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin-top: 4px;
+}
