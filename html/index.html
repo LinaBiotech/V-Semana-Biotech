@@ -26,10 +26,12 @@
 	    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
     <![endif]-->
 
-</head>
+  </head>
   <body>
-    <header> <!--Início Header-->
-      <nav class="navbar navbar-expand-lg navbar-dark">
+    <!--Início Header-->
+    <header> 
+      <!--Início Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-dark py-4"> 
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-biotec" aria-controls="navbar-biotec" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,7 +40,7 @@
           <div id="navbar-biotec" class="collapse navbar-collapse justify-content-center">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="">Início</a>
+                <a class="nav-link active" aria-current="page" href="">Início</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="">Como chegar</a>
@@ -59,6 +61,7 @@
           </div>
         </div>
       </nav>
+      <!--Fim Navbar-->
     </header> <!--Fim Header-->
 
 
@@ -68,14 +71,26 @@
         <div class="carousel-item active">
           <div class="purple-opacity"></div>
           <img src="/assets/carousel-0.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h1>V Semana da Biotecnologia</h1>
+            <p>Inovação, Ciência e Futuro</p>
+          </div>
         </div>
         <div class="carousel-item">
           <div class="purple-opacity"></div>
           <img src="/assets/carousel-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h1>V Semana da Biotecnologia</h1>
+            <p>Inovação, Ciência e Futuro</p>
+          </div>
         </div>
         <div class="carousel-item">
           <div class="purple-opacity"></div>
           <img src="/assets/carousel-2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h1>V Semana da Biotecnologia</h1>
+            <p>Inovação, Ciência e Futuro</p>
+          </div>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselBiotechFade" data-bs-slide="prev"></button>
@@ -84,15 +99,16 @@
     <!--Fim Carrosel-->
 
       
-    <!--sobre eventos-->
+    <!--Início Sobre eventos-->
     <section class="sobre py-5">
-      <div class="container text-center" id="test">
+      <div class="container text-center" id="sobre-evento">
         <!-- Título -->
         <h2 class="mb-4" id="titulo-evento">Sobre o Evento</h2>
         <!-- Texto a ser adicionado -->
         <p class="mb-5 col-md-8 mx-auto" id="subtitulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, mollitia ea ratione accusantium incidunt illum voluptates! Quae, quidem excepturi mollitia velit alias quam porro doloremque et eos iure, officiis nisi!</p>
         <!-- Cards -->
         <div class="row g-4">
+
           <div class="col-md-4">
             <div class="card-box p-4">
               <div class="icon-circulo mb-4">
@@ -122,9 +138,11 @@
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, architecto omnis laudantium, non, ex eaque perspiciatis dolore corporis odio suscipit facere nesciunt id quasi rerum saepe facilis ut magni! Reiciendis!</p>
             </div>
           </div>
-
-          
+        </div>
+      </div>
     </section>
+    <!--Fim Sobre eventos-->
+
 
       <!--Links do bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
