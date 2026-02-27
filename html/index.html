@@ -21,6 +21,8 @@
 
     <link href="/css/style.css" rel="stylesheet" >
 
+    <script src="/js/script.js"></script>
+
     <!--html5shiv-->
     <!--[if lt IE 9]>
 	    <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -31,7 +33,7 @@
     <!--Início Header-->
     <header> 
       <!--Início Navbar-->
-      <nav class="navbar navbar-expand-lg navbar-dark py-4"> 
+      <nav class="navbar navbar-expand-md navbar-dark py-4"> 
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-biotec" aria-controls="navbar-biotec" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -74,6 +76,7 @@
           <div class="carousel-caption">
             <h1>V Semana da Biotecnologia</h1>
             <p>Inovação, Ciência e Futuro</p>
+            <a class="btn btn-primary" href="#">Inscreva-se já</a>
           </div>
         </div>
         <div class="carousel-item">
@@ -82,6 +85,7 @@
           <div class="carousel-caption">
             <h1>V Semana da Biotecnologia</h1>
             <p>Inovação, Ciência e Futuro</p>
+            <a class="btn btn-primary" href="#">Inscreva-se já</a>
           </div>
         </div>
         <div class="carousel-item">
@@ -90,6 +94,7 @@
           <div class="carousel-caption">
             <h1>V Semana da Biotecnologia</h1>
             <p>Inovação, Ciência e Futuro</p>
+            <a class="btn btn-primary" href="#">Inscreva-se já</a>
           </div>
         </div>
       </div>
@@ -98,49 +103,66 @@
     </div> 
     <!--Fim Carrosel-->
 
-      
+    <!--Início parallax-->
+    <div class="parallax">
+      <!--Início countdowon-->
+      <section id="section-countdown">
+        <div class="container text-center" id="countdown" >
+          <!-- Título -->
+          <h2>Quando vai ser?</h2>
+          <!-- Texto a ser adicionado -->
+          <div id="faixa-countdown">
+            <p id="countdown-contagem"></p>
+          </div>
+        </div>
+      </section>
+      <!--Fim countdown-->
+    </div>
+    <!--Fim parallax-->
+  
+
     <!--Início Sobre eventos-->
-    <section class="sobre py-5">
-      <div class="container text-center" id="sobre-evento">
-        <!-- Título -->
-        <h2 class="mb-4" id="titulo-evento">Sobre o Evento</h2>
-        <!-- Texto a ser adicionado -->
-        <p class="mb-5 col-md-8 mx-auto" id="subtitulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, mollitia ea ratione accusantium incidunt illum voluptates! Quae, quidem excepturi mollitia velit alias quam porro doloremque et eos iure, officiis nisi!</p>
-        <!-- Cards -->
-        <div class="row g-4">
+      <section class="sobre py-5">
+        <div class="container text-center" id="sobre-evento">
+          <!-- Título -->
+          <h2 class="mb-4" id="titulo-evento">Sobre o Evento</h2>
+          <!-- Texto a ser adicionado -->
+          <p class="mb-5 col-md-8 mx-auto" id="subtitulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, mollitia ea ratione accusantium incidunt illum voluptates! Quae, quidem excepturi mollitia velit alias quam porro doloremque et eos iure, officiis nisi!</p>
+          <!-- Cards -->
+          <div class="row g-4">
 
-          <div class="col-md-4">
-            <div class="card-box p-4">
-              <div class="icon-circulo mb-4">
-                <i class="bi bi-people-fill"></i>
+            <div class="col-md-4">
+              <div class="card-box p-4">
+                <div class="icon-circulo mb-4">
+                  <i class="bi bi-people-fill"></i>
+                </div>
+                <h4>Evento Extensionista</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, architecto omnis laudantium, non, ex eaque perspiciatis dolore corporis odio suscipit facere nesciunt id quasi rerum saepe facilis ut magni! Reiciendis!</p>
               </div>
-              <h4>Evento Extensionista</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, architecto omnis laudantium, non, ex eaque perspiciatis dolore corporis odio suscipit facere nesciunt id quasi rerum saepe facilis ut magni! Reiciendis!</p>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="card-box p-4">
-              <div class="icon-circulo mb-4">
-                <i class="bi bi-award"></i>
+            <div class="col-md-4">
+              <div class="card-box p-4">
+                <div class="icon-circulo mb-4">
+                  <i class="bi bi-award"></i>
+                </div>
+                <h4>Certificação</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, architecto omnis laudantium, non, ex eaque perspiciatis dolore corporis odio suscipit facere nesciunt id quasi rerum saepe facilis ut magni! Reiciendis!</p>
               </div>
-              <h4>Certificação</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, architecto omnis laudantium, non, ex eaque perspiciatis dolore corporis odio suscipit facere nesciunt id quasi rerum saepe facilis ut magni! Reiciendis!</p>
             </div>
-          </div>
 
-          <div class="col-md-4">
-            <div class="card-box p-4">
-              <div class="icon-circulo mb-4">
-                <i class="bi bi-award"></i>
+            <div class="col-md-4">
+              <div class="card-box p-4">
+                <div class="icon-circulo mb-4">
+                  <i class="bi bi-award"></i>
+                </div>
+                <h4>Certificação</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, architecto omnis laudantium, non, ex eaque perspiciatis dolore corporis odio suscipit facere nesciunt id quasi rerum saepe facilis ut magni! Reiciendis!</p>
               </div>
-              <h4>Certificação</h4>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, architecto omnis laudantium, non, ex eaque perspiciatis dolore corporis odio suscipit facere nesciunt id quasi rerum saepe facilis ut magni! Reiciendis!</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     <!--Fim Sobre eventos-->
 
 
