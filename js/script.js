@@ -1,4 +1,4 @@
-var biotechDate = new Date(2026, 4, 29).getTime();
+var biotechDate = new Date(2026, 7, 8).getTime();
 
 var x = setInterval(function(){
 
