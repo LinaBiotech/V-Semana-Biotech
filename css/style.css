@@ -241,10 +241,6 @@ header{
 }
 
 /* items da programação */
-#conteudo-geral-prog .d-flex{
-  align-items: center !important;
-}
-
 /* background da lista da prog com hover */
 .card-prog .d-flex{
   padding: 12px;
