@@ -225,8 +225,7 @@ header{
   font-size: 30px;
 }
 
-/* card de programação */
-
+/* menu programação */
 .card-prog{
   background: #e9e6ef;
   border-radius: 12px;
@@ -236,7 +235,7 @@ header{
 
 /* header */
 .header-prog{
-  background: linear-gradient(90deg, #8A2BE2, #a855f7);
+  background: linear-gradient(90deg, #8A2BE2, #471477);
   padding: 20px;
 }
 
@@ -275,3 +274,54 @@ header{
   font-size: 12px;
   margin-top: 4px;
 }
+
+
+
+/* cards dos palestrantes */
+/* titulo e subtitulo palestrantes */
+.titulo-palestrantes {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.subtitulo-palestrantes {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* decoration do card dos palestrantes */
+.card-palestrante {
+  border-radius: 15px;
+  transition: 0.5s ease;
+  background: #fff;
+}
+
+/* imagem que ainda sera adicionada */
+.card-palestrante img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-palestrante:hover {
+  transform: translateY(-8px);
+}
+
+
+.card-palestrante h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* descrição dos palestrantes ainda deve ser modificada */
+.graduacao {
+  color: #7c3aed;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+.descricao {
+  color: #555;
+  margin-top: 10px;
+}
+/* fim do card dos palestrantes */
