@@ -135,7 +135,7 @@ header{
 
 /*--Parallax--*/
 .parallax{
-  background-image: url(/assets/background-parallax.jpg);
+  background-image: url(./assets/background-parallax.jpg);
   position: relative;
   height: 500px;
   background-repeat: no-repeat;
