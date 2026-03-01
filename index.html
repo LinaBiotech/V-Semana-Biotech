@@ -31,7 +31,7 @@
   </head>
   <body>
     <!--Início Header-->
-    <header> 
+    <header id="inicio"> 
       <!--Início Navbar-->
       <nav class="navbar navbar-expand-md navbar-dark py-4"> 
         <div class="container-fluid">
@@ -42,22 +42,22 @@
           <div id="navbar-biotec" class="collapse navbar-collapse justify-content-center">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="">Início</a>
+                <a class="nav-link active" aria-current="page" href="#inicio">Início</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Como chegar</a>
+                <a class="nav-link" href="#sobre-evento">Sobre o Evento</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Extensão</a>
+                <a class="nav-link" href="#programacao">Programação</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Programação</a>
+                <a class="nav-link" href="#palestrantes">Palestrantes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Patrocinadores</a>
+                <a class="nav-link" href="#">Patrocinadores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Sobre nós</a>
+                <a class="nav-link" href="#">Sobre nós</a>
               </li>
             </ul>
           </div>
@@ -106,14 +106,13 @@
     <!--Início parallax-->
     <div class="parallax">
       <!--Início countdowon-->
-      <section id="section-countdown">
-        <div class="container text-center" id="countdown" >
-          <!-- Título -->
-          <h2>Quando vai ser?</h2>
-          <!-- Texto a ser adicionado -->
-          <div id="faixa-countdown">
-            <p id="countdown-contagem"></p>
-          </div>
+      <section class="container-fluid h-100 container-countdown">
+        <div class="caption-countdown">
+          <h2 class="titulo-countdown">Tá chegando!!</h2>
+          <p>8/6/2026</p>
+        </div>
+        <div class="faixa-countdown">
+          <p id="countdown-contagem"></p>
         </div>
       </section>
       <!--Fim countdown-->
@@ -121,13 +120,13 @@
     <!--Fim parallax-->
   
 
-    <!--Início Sobre eventos-->
+      <!--Início Sobre eventos-->
       <section class="sobre py-5">
         <div class="container text-center" id="sobre-evento">
           <!-- Título -->
-          <h2 class="mb-4" id="titulo-evento">Sobre o Evento</h2>
+          <h2 class="titulo-section mb-4">Sobre o Evento</h2>
           <!-- Texto a ser adicionado -->
-          <p class="mb-5 col-md-8 mx-auto" id="subtitulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, mollitia ea ratione accusantium incidunt illum voluptates! Quae, quidem excepturi mollitia velit alias quam porro doloremque et eos iure, officiis nisi!</p>
+          <p class="mb-5 col-md-8 mx-auto subtitulo-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, mollitia ea ratione accusantium incidunt illum voluptates! Quae, quidem excepturi mollitia velit alias quam porro doloremque et eos iure, officiis nisi!</p>
           <!-- Cards -->
           <div class="row g-4">
 
@@ -163,314 +162,318 @@
           </div>
         </div>
       </section>
-    <!--Fim Sobre eventos-->
+      <!--Fim Sobre eventos-->
     
 
   
-<!-- Início cards da programação -->
-<section class="container my-5">
-
- <div class="programação-dia">
-
-  <!-- dia1-->
-  <div class="card-prog shadow mb-3">
-    <div class="header-prog d-flex justify-content-between align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#dia1" style="cursor: pointer;">
-      <h4 class="mb-0 text-white">Segunda-feira - 20/03</h4>
-      <i class="bi bi-chevron-down text-white"></i>
-    </div>
-
-    <div id="dia1" class="collapse">
-  <div class="p-4">
-
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">08:00</span>
-        <span>Abertura do Evento</span>
-      </div>
-      <span class="badge-custom">Abertura</span>
-    </div>
-
-
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">09:00</span>
-        <span>Palestra Principal</span>
-      </div>
-      <span class="badge-custom">Palestra</span>
-    </div>
-
-    
-    <div class="d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">11:00</span>
-        <span>Workshop Técnico</span>
-      </div>
-      <span class="badge-custom">Workshop</span>
-    </div>
-
-  </div>
-</div>
-  </div>
-
-
-<!--dia2-->
-   <div class="card-prog shadow mb-3">
-    <div class="header-prog d-flex justify-content-between align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#dia2" style="cursor: pointer;">
-      <h4 class="mb-0 text-white">Terça-feira - 21/03</h4>
-      <i class="bi bi-chevron-down text-white"></i>
-    </div>
-
-    <div id="dia2" class="collapse">
-  <div class="p-4">
-
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">08:00</span>
-        <span>Abertura do Evento</span>
-      </div>
-      <span class="badge-custom">Abertura</span>
-    </div>
-
-    
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">09:00</span>
-        <span>Palestra Principal</span>
-      </div>
-      <span class="badge-custom">Palestra</span>
-    </div>
-
-    
-    <div class="d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">11:00</span>
-        <span>Workshop Técnico</span>
-      </div>
-
-      <span class="badge-custom">Workshop</span>
-    </div>
-
-  </div>
-</div>
-  </div>
-
-<!--dia3-->
-  <div class="card-prog shadow mb-3">
-    <div class="header-prog d-flex justify-content-between align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#dia3" style="cursor: pointer;">
-      <h4 class="mb-0 text-white">Quarta-feira - 22/03</h4>
-      <i class="bi bi-chevron-down text-white"></i>
-    </div>
-
-    <div id="dia3" class="collapse">
-  <div class="p-4">
-
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">08:00</span>
-        <span>Abertura do Evento</span>
-      </div>
-      <span class="badge-custom">Abertura</span>
-    </div>
-
-    
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">09:00</span>
-        <span>Palestra Principal</span>
-      </div>
-      <span class="badge-custom">Palestra</span>
-    </div>
-
-    
-    <div class="d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">11:00</span>
-        <span>Workshop Técnico</span>
-      </div>
-      <span class="badge-custom">Workshop</span>
-    </div>
-
-  </div>
-</div>
-  </div>
-
-  <!--dia4-->
-    <div class="card-prog shadow mb-3">
-    <div class="header-prog d-flex justify-content-between align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#dia4" style="cursor: pointer;">
-      <h4 class="mb-0 text-white">Quinta-feira - 23/03</h4>
-      <i class="bi bi-chevron-down text-white"></i>
-    </div>
-
-    <div id="dia4" class="collapse">
-  <div class="p-4">
-
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">08:00</span>
-        <span>Abertura do Evento</span>
-      </div>
-      <span class="badge-custom">Abertura</span>
-    </div>
-
-    
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">09:00</span>
-        <span>Palestra Principal</span>
-      </div>
-      <span class="badge-custom">Palestra</span>
-    </div>
-
-    
-    <div class="d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">11:00</span>
-        <span>Workshop Técnico</span>
-      </div>
-
-      <span class="badge-custom">Workshop</span>
-    </div>
-
-  </div>
-</div>
-  </div>
-
-  <!-- dia5 -->
-   <div class="card-prog shadow mb-3">
-    <div class="header-prog d-flex justify-content-between align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#dia5" style="cursor: pointer;">
-      <h4 class="mb-0 text-white">Sexta-feira - 24/03</h4>
-      <i class="bi bi-chevron-down text-white"></i>
-    </div>
-
-    <div id="dia5" class="collapse" data-bs-parent="#progamação-menu">
-  <div class="p-4">
-
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">08:00</span>
-        <span>Abertura do Evento</span>
-      </div>
-      <span class="badge-custom">Abertura</span>
-    </div>
-
-    
-    <div class="d-flex justify-content-between align-items-center mb-3">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">09:00</span>
-        <span>Palestra Principal</span>
-      </div>
-      <span class="badge-custom">Palestra</span>
-    </div>
-
-    
-    <div class="d-flex justify-content-between align-items-center">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-clock horario-icon me-2"></i>
-        <span class="horario">11:00</span>
-        <span>Workshop Técnico</span>
-      </div>
-
-      <span class="badge-custom">Workshop</span>
-    </div>
-
-  </div>
-</div>
-  </div>
-</section>
-  <!-- fim dos cards de programação -->
-
-
-  <!-- cards palestrantes -->
-<section class="container my-5">
-  
-  <div class="text-center mb-5">
-    <h2 class="titulo-palestrantes">Palestrantes</h2>
-    <p class="subtitulo-palestrantes">
-      Conheça os especialistas que vão compartilhar conhecimento
-    </p>
-  </div>
-
-  <div class="row g-4">
-    <!-- Cards -->
-    <div class="col-md-3">
-      <div class="card-palestrante shadow">
-        <img src="" class="img-fluid card-img-top" alt="">
-        <div class="p-4">
-          <h5>Dra. Ana Carolina Mendes</h5>
-          <p class="graduacao">
-            <i class="bi bi-mortarboard"></i>
-            PhD em Genética Molecular<br>
-            Universidade de São Paulo
+      <!-- Início cards da programação -->
+      <section id="programacao" class="container my-5">
+        <div class="text-center mb-5">
+          <h2 class="titulo-section">Programação</h2>
+          <p class="subtitulo-section">
+            Confira os horários
           </p>
-          <p class="descricao">"CRISPR e o Futuro da Medicina"</p>
+        </div>
+      <div class="programação-dia">
+
+        <!-- dia1-->
+        <div class="card-prog shadow mb-3">
+          <div class="header-prog d-flex justify-content-between align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#dia1" style="cursor: pointer;">
+            <h4 class="mb-0 text-white">Segunda-feira - 20/03</h4>
+            <i class="bi bi-chevron-down text-white"></i>
+          </div>
+
+          <div id="dia1" class="collapse">
+            <div class="p-4">
+
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-clock horario-icon me-2"></i>
+                  <span class="horario">08:00</span>
+                  <span>Abertura do Evento</span>
+                </div>
+                <span class="badge-custom">Abertura</span>
+              </div>
+
+
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-clock horario-icon me-2"></i>
+                  <span class="horario">09:00</span>
+                  <span>Palestra Principal</span>
+                </div>
+                <span class="badge-custom">Palestra</span>
+              </div>
+
+            
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-clock horario-icon me-2"></i>
+                  <span class="horario">11:00</span>
+                  <span>Workshop Técnico</span>
+                </div>
+                <span class="badge-custom">Workshop</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      <!--dia2-->
+        <div class="card-prog shadow mb-3">
+          <div class="header-prog d-flex justify-content-between align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#dia2" style="cursor: pointer;">
+            <h4 class="mb-0 text-white">Terça-feira - 21/03</h4>
+            <i class="bi bi-chevron-down text-white"></i>
+          </div>
+
+          <div id="dia2" class="collapse">
+        <div class="p-4">
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-clock horario-icon me-2"></i>
+              <span class="horario">08:00</span>
+              <span>Abertura do Evento</span>
+            </div>
+            <span class="badge-custom">Abertura</span>
+          </div>
+
+          
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-clock horario-icon me-2"></i>
+              <span class="horario">09:00</span>
+              <span>Palestra Principal</span>
+            </div>
+            <span class="badge-custom">Palestra</span>
+          </div>
+
+          
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-clock horario-icon me-2"></i>
+              <span class="horario">11:00</span>
+              <span>Workshop Técnico</span>
+            </div>
+
+            <span class="badge-custom">Workshop</span>
+          </div>
+
         </div>
       </div>
-    </div>
+        </div>
 
-    
-    <div class="col-md-3">
-      <div class="card-palestrante shadow">
-        <img src="" class="img-fluid card-img-top" alt="">
+      <!--dia3-->
+        <div class="card-prog shadow mb-3">
+          <div class="header-prog d-flex justify-content-between align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#dia3" style="cursor: pointer;">
+            <h4 class="mb-0 text-white">Quarta-feira - 22/03</h4>
+            <i class="bi bi-chevron-down text-white"></i>
+          </div>
+
+          <div id="dia3" class="collapse">
         <div class="p-4">
-          <h5>Dr. Roberto Silva</h5>
-          <p class="graduacao">
-            <i class="bi bi-mortarboard"></i>
-            Professor Titular de Biotecnologia<br>
-            UNICAMP
-          </p>
-          <p class="descricao">"Biotecnologia Industrial Sustentável"</p>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-clock horario-icon me-2"></i>
+              <span class="horario">08:00</span>
+              <span>Abertura do Evento</span>
+            </div>
+            <span class="badge-custom">Abertura</span>
+          </div>
+
+          
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-clock horario-icon me-2"></i>
+              <span class="horario">09:00</span>
+              <span>Palestra Principal</span>
+            </div>
+            <span class="badge-custom">Palestra</span>
+          </div>
+
+          
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-clock horario-icon me-2"></i>
+              <span class="horario">11:00</span>
+              <span>Workshop Técnico</span>
+            </div>
+            <span class="badge-custom">Workshop</span>
+          </div>
+
         </div>
       </div>
-    </div>
+        </div>
 
-    
-    <div class="col-md-3">
-      <div class="card-palestrante shadow">
-        <img src="" class="img-fluid card-img-top" alt="">
+        <!--dia4-->
+          <div class="card-prog shadow mb-3">
+          <div class="header-prog d-flex justify-content-between align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#dia4" style="cursor: pointer;">
+            <h4 class="mb-0 text-white">Quinta-feira - 23/03</h4>
+            <i class="bi bi-chevron-down text-white"></i>
+          </div>
+
+          <div id="dia4" class="collapse">
         <div class="p-4">
-          <h5>Dra. Mariana Costa</h5>
-          <p class="graduacao">
-            <i class="bi bi-mortarboard"></i>
-            Pesquisadora em Bioinformática<br>
-            FAPESP
-          </p>
-          <p class="descricao">"Análise de Dados Genômicos em Larga Escala"</p>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-clock horario-icon me-2"></i>
+              <span class="horario">08:00</span>
+              <span>Abertura do Evento</span>
+            </div>
+            <span class="badge-custom">Abertura</span>
+          </div>
+
+          
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-clock horario-icon me-2"></i>
+              <span class="horario">09:00</span>
+              <span>Palestra Principal</span>
+            </div>
+            <span class="badge-custom">Palestra</span>
+          </div>
+
+          
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-clock horario-icon me-2"></i>
+              <span class="horario">11:00</span>
+              <span>Workshop Técnico</span>
+            </div>
+
+            <span class="badge-custom">Workshop</span>
+          </div>
+
         </div>
       </div>
-    </div>
+        </div>
 
-    
-    <div class="col-md-3">
-      <div class="card-palestrante shadow">
-        <img src="" class="img-fluid card-img-top" alt="">
+        <!-- dia5 -->
+        <div class="card-prog shadow mb-3">
+          <div class="header-prog d-flex justify-content-between align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#dia5" style="cursor: pointer;">
+            <h4 class="mb-0 text-white">Sexta-feira - 24/03</h4>
+            <i class="bi bi-chevron-down text-white"></i>
+          </div>
+
+          <div id="dia5" class="collapse" data-bs-parent="#progamação-menu">
         <div class="p-4">
-          <h5>Dr. Felipe Oliveira</h5>
-          <p class="graduacao">
-            <i class="bi bi-mortarboard"></i>
-            Diretor de P&D<br>
-            BioTech Labs
-          </p>
-          <p class="descricao">"Inovação e Empreendedorismo em Biotech"</p>
+
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-clock horario-icon me-2"></i>
+              <span class="horario">08:00</span>
+              <span>Abertura do Evento</span>
+            </div>
+            <span class="badge-custom">Abertura</span>
+          </div>
+
+          
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-clock horario-icon me-2"></i>
+              <span class="horario">09:00</span>
+              <span>Palestra Principal</span>
+            </div>
+            <span class="badge-custom">Palestra</span>
+          </div>
+
+          
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-clock horario-icon me-2"></i>
+              <span class="horario">11:00</span>
+              <span>Workshop Técnico</span>
+            </div>
+
+            <span class="badge-custom">Workshop</span>
+          </div>
+
         </div>
       </div>
-    </div>
+        </div>
+      </section>
+      <!-- fim dos cards de programação -->
 
-  </div>
-</section>
+
+      <!-- cards palestrantes -->
+      <section id="palestrantes" class="container my-5">
+        
+        <div class="text-center mb-5">
+          <h2 class="titulo-section">Palestrantes</h2>
+          <p class="subtitulo-section">
+            Conheça os especialistas que vão compartilhar conhecimento
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Cards -->
+          <div class="col-md-3">
+            <div class="card-palestrante shadow">
+              <img src="" class="img-fluid card-img-top" alt="">
+              <div class="p-4">
+                <h5>Dra. Ana Carolina Mendes</h5>
+                <p class="graduacao">
+                  <i class="bi bi-mortarboard"></i>
+                  PhD em Genética Molecular<br>
+                  Universidade de São Paulo
+                </p>
+                <p class="descricao">"CRISPR e o Futuro da Medicina"</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-md-3">
+            <div class="card-palestrante shadow">
+              <img src="" class="img-fluid card-img-top" alt="">
+              <div class="p-4">
+                <h5>Dr. Roberto Silva</h5>
+                <p class="graduacao">
+                  <i class="bi bi-mortarboard"></i>
+                  Professor Titular de Biotecnologia<br>
+                  UNICAMP
+                </p>
+                <p class="descricao">"Biotecnologia Industrial Sustentável"</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-md-3">
+            <div class="card-palestrante shadow">
+              <img src="" class="img-fluid card-img-top" alt="">
+              <div class="p-4">
+                <h5>Dra. Mariana Costa</h5>
+                <p class="graduacao">
+                  <i class="bi bi-mortarboard"></i>
+                  Pesquisadora em Bioinformática<br>
+                  FAPESP
+                </p>
+                <p class="descricao">"Análise de Dados Genômicos em Larga Escala"</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-md-3">
+            <div class="card-palestrante shadow">
+              <img src="" class="img-fluid card-img-top" alt="">
+              <div class="p-4">
+                <h5>Dr. Felipe Oliveira</h5>
+                <p class="graduacao">
+                  <i class="bi bi-mortarboard"></i>
+                  Diretor de P&D<br>
+                  BioTech Labs
+                </p>
+                <p class="descricao">"Inovação e Empreendedorismo em Biotech"</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
 
 <!-- fim cards palestrantes -->
       <!--Links do bootstrap-->

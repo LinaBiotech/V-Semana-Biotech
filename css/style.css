@@ -63,7 +63,7 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 5px 10px rgb(56, 55, 58);;
+  box-shadow: 0 5px 10px rgb(56, 55, 58);
   border-radius: 10px;
   transition: all 0.3s ease;
 }
@@ -88,7 +88,7 @@ header{
 }
 @media (max-width: 480px){
   .carousel-caption h1{
-    font-size: 3em;
+    font-size: 2.8em;
   }
   .carousel-caption p{
     font-weight: 200;
@@ -135,58 +135,54 @@ header{
 
 /*--Parallax--*/
 .parallax{
-  background-image: url(./assets/background-parallax.jpg);
+  background-image: url();
   position: relative;
-  height: 500px;
+  height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   display: flex;
   align-items: center;
+  padding: 50px 0;
 }
 
 /*--COUNTDOWN--*/
-#section-countdown{
-  background: #353535;
+.container-countdown{
+  text-align: center;
+  background: #7a5cc8;
+  height: 100%;
+  padding: 50px 0;
+}
+.faixa-countdown{
+  background: rgba(0,0,0,0.15);
   display: flex;
   align-items: center;
-  height: 400px;
-  width: 100%;
-  padding: 10px;
-  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.5);
-}
-#countdown{
-  height: 100%;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding: 10px;
+  padding: 40px 0;
 }
-#section-countdown h2{
-  color: #ebe6eb;
-  line-height: 2em;
-  font-size: 4em;
-}
-#section-countdown p{
-  margin: 50px auto;
-  font-size: 3em;
+.container-countdown p{
+  font-size: 2em;
   font-weight: bold;
+  color: #fff;
 }
-#faixa-countdown{
-  background: #ebe6eb;
-  border-radius: 10px;
+.titulo-countdown{
+  color: #fff;
+  font-size: 5em;
+  margin: 10px;
+}
+.caption-countdown{
+  margin: 50px 0 ;
+}
+.caption-countdown p{
+  font-size: 1.5em;
+  font-weight: 400;
 }
 
 @media (max-width: 768px){
-  #section-countdown h2{
-    line-height: 2em;
-    font-size: 3em;
-  }
-  #section-countdown p{
-    margin: 30px auto;
-    font-size: 2em;
-    font-weight: bold;
+  .titulo-countdown{
+    font-size: 2.5em;
+    margin: 20px;
   }
 }
 
@@ -215,10 +211,8 @@ header{
   align-items: center;
   justify-content: center;
   margin: auto;
-
   display: flex;
-  justify-content: center;
-  margin:auto;
+
 }
 .icon-circulo i{
   color: white;
@@ -275,11 +269,21 @@ header{
   margin-top: 4px;
 }
 
+/*titulo geral*/
+.titulo-section {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 10px;
+}
 
+.subtitulo-section {
+  font-weight: bold;
+  font-size: 18px;
+}
 
 /* cards dos palestrantes */
 /* titulo e subtitulo palestrantes */
-.titulo-palestrantes {
+/* .titulo-palestrantes {
   font-size: 50px;
   font-weight: bold;
 }
@@ -287,7 +291,7 @@ header{
 .subtitulo-palestrantes {
   font-weight: bold;
   font-size: 18px;
-}
+} */
 
 /* decoration do card dos palestrantes */
 .card-palestrante {
