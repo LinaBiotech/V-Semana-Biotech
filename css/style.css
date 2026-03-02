@@ -291,6 +291,9 @@ header{
 }
 
 /* decoration do card dos palestrantes */
+#palestrantes{
+  padding: 50px;
+}
 .card-palestrante {
   border-radius: 15px;
   transition: 0.5s ease;
