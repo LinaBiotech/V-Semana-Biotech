@@ -9,6 +9,9 @@ header{
   z-index: 2; 
   width: 100%;
 }
+.borda{
+  border: 1px solid red;
+}
 
 /*--CAROUSEL--*/
 #carouselBiotechFade {
@@ -134,8 +137,9 @@ header{
 }
 
 /*--Parallax--*/
+
 .parallax{
-  background-image: url();
+  background-image: url(../assets/background-parallax.jpg);
   position: relative;
   height: 600px;
   background-repeat: no-repeat;
@@ -192,6 +196,7 @@ header{
   font-weight: bold;
 }
 .sobre {
+  margin: 25px 0 100px 0;
   background-color: #f5f5f5;
 }
 
@@ -234,6 +239,10 @@ header{
 }
 
 /* items da programação */
+#programacao{
+  background: #f0f0f0f8;;
+  padding: 50px 15%;
+}
 /* background da lista da prog com hover */
 .card-prog .d-flex{
   padding: 12px;
@@ -280,18 +289,6 @@ header{
   font-weight: bold;
   font-size: 18px;
 }
-
-/* cards dos palestrantes */
-/* titulo e subtitulo palestrantes */
-/* .titulo-palestrantes {
-  font-size: 50px;
-  font-weight: bold;
-}
-
-.subtitulo-palestrantes {
-  font-weight: bold;
-  font-size: 18px;
-} */
 
 /* decoration do card dos palestrantes */
 .card-palestrante {
