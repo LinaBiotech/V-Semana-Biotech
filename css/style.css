@@ -447,12 +447,19 @@ header{
 /* fim do card dos palestrantes */
 
 
-/* cards do minicurso */
+
+/* section do minicurso */
+#minicursos{
+ padding: 1% 10%;
+ background-color: #f0f0f0f8;;
+}
+
+
 .header-minicurso {
   text-align: center;
   margin-bottom: 3rem;
 }
-
+/* card minicurso */
 .titulo-card {
   font-weight: 700;
   margin-bottom: 0.25rem;
@@ -464,14 +471,52 @@ header{
   margin-bottom: 1rem;
 }
 
-.titulo-minicurso{
-  font-weight: bold;}
- 
   .minicurso-card{
+    background-color: #ffffff;
+    border-left: 5px solid #7b2cff;
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.3s ease;
     height: 100%;
-    border: 0;
   }
 
-  .subtitulo-minicurso{
-    font-weight: bold;
+  .minicurso-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  }
+
+  /*ícone*/
+  .minicurso-icon{
+    width: 55px;
+    height: 55px;
+    background: linear-gradient(135deg, #8A2BE2, #471477);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 22px;
+  }
+ 
+  .professor-text{
+    color: #7b2cff;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  /* descrições */
+
+  .descricao-card{
+    color: #6c757d;
+    margin: 15px 0;
+  }
+
+  /* infos */
+  .minicurso-card span{
+    color: #6c757d;
+    font-size: 0.95rem;
+  }
+
+  .minicurso-card i {
+    margin-right: 6px;
   }
