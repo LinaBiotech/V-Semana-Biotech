@@ -29,3 +29,12 @@ var x = setInterval(function(){
     }
 
 },1000)
+
+
+function mostrarGaleria0(){
+    document.getElementById("galeria0").style.display = "block";
+}
+
+function fechar0(){
+    document.getElementById("galeria0").style.display = "none"
+}

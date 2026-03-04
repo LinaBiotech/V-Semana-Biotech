@@ -241,8 +241,100 @@ header{
 /* items da programação */
 #programacao{
   background: #f0f0f0f8;;
-  padding: 50px 15%;
+  padding: 50px 10%;
 }
+
+
+/**/
+
+#galeria0, #galeria1, #galeria2, #galeria3{
+  display: none;
+}
+.galeria{
+  overflow-y: auto;
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  z-index: 1000;
+  height: 80%;
+  width: 80%;
+  padding: 20px;
+  background: #000000;
+  border-radius: 30px;
+  color: #fff
+}
+.galeria button{
+  position: absolute;
+  top: 0;
+  left: 95%;
+  margin: 10px;
+}
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+.grid .wrapper{
+  height: 300px;
+  overflow: hidden;
+  max-width: 400px;
+  margin: 5px;
+}
+.grid .wrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+/* -- EDICOES ANTERIORES */
+#edicoes-anteriores{
+  padding: 5% 15%;
+}
+.botoes-anteriores button {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 0;
+  border-radius: 10px;
+  border: none;
+
+}
+.botoes-anteriores img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.botoes-anteriores p{
+  margin: 5px 20px 0 10px;
+}
+.titulo-subsection{
+  font-size: 2em;
+}
+.overlay-texto{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+  padding: 20px;
+}
+
+@media (max-width: 768px){
+
+  
+}
+@media (max-width: 480px){
+
+}
+
+
+
+
 /* background da lista da prog com hover */
 .card-prog .d-flex{
   padding: 12px;
@@ -288,6 +380,30 @@ header{
 .subtitulo-section {
   font-weight: bold;
   font-size: 18px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px){
+  .titulo-section {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.subtitulo-section {
+  font-weight: bold;
+  font-size: 1.5em
+}
+  
+}
+@media (max-width: 480px){
+  .titulo-section {
+  font-size: 2em;
+
+}
+  .subtitulo-section {
+    font-size: 1em;
+  }
 }
 
 /* decoration do card dos palestrantes */
