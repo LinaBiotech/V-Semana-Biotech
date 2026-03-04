@@ -445,3 +445,33 @@ header{
   margin-top: 10px;
 }
 /* fim do card dos palestrantes */
+
+
+/* cards do minicurso */
+.header-minicurso {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.titulo-card {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.card-top {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.titulo-minicurso{
+  font-weight: bold;}
+ 
+  .minicurso-card{
+    height: 100%;
+    border: 0;
+  }
+
+  .subtitulo-minicurso{
+    font-weight: bold;
+  }
