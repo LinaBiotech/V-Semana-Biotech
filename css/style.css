@@ -238,6 +238,11 @@ header{
   padding: 20px;
 }
 
+.header-prog h4{
+  padding-left: 1%;
+}
+
+
 /* items da programação */
 #programacao{
   background: #f0f0f0f8;;
@@ -520,3 +525,34 @@ header{
   .minicurso-card i {
     margin-right: 6px;
   }
+
+
+  /* hackthoon */
+  /* Fundo gradiente principal */
+.hack-section {
+  background: linear-gradient(to top, #681baf, #340d58);
+  padding: 80px 0;
+}
+
+/* Caixa requisitos */
+.requisitos-box {
+  background: linear-gradient(135deg, #7b1fa2, #9c27b0);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  padding: 20px 25px;
+  max-width: 550px;
+}
+
+.requisitos-box h6{
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.requisitos-box ul {
+  padding-left: 20px;
+}
+
+.requisitos-box li{
+  margin-bottom: 6px;
+}
