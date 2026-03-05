@@ -250,11 +250,7 @@ header{
 }
 
 
-/**/
-
-#galeria0, #galeria1, #galeria2, #galeria3{
-  display: none;
-}
+/*GALERIA*/
 .galeria{
   overflow-y: auto;
   position: fixed;
@@ -266,7 +262,16 @@ header{
   padding: 20px;
   background: #000000;
   border-radius: 30px;
-  color: #fff
+  color: #fff;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+.galeria.ativa{
+  transform: scale(1.1);
+  opacity: 1;
+  pointer-events: auto;
 }
 .galeria button{
   position: absolute;
@@ -288,6 +293,10 @@ header{
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: all 0.2s ease;
+}
+.grid .wrapper img:hover{
+  transform: scale(1.1);
 }
 
 
@@ -305,12 +314,15 @@ header{
   padding: 0;
   border-radius: 10px;
   border: none;
-
 }
 .botoes-anteriores img{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.botoes-anteriores img:hover{
+  transform: scale(1.1);
 }
 .botoes-anteriores p{
   margin: 5px 20px 0 10px;
@@ -525,7 +537,6 @@ header{
   .minicurso-card i {
     margin-right: 6px;
   }
-
 
   /* hackthoon */
   /* Fundo gradiente principal */

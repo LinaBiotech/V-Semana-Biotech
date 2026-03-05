@@ -32,9 +32,9 @@ var x = setInterval(function(){
 
 
 function mostrarGaleria0(){
-    document.getElementById("galeria0").style.display = "block";
+    document.getElementById("galeria0").classList.add("ativa")
 }
 
 function fechar0(){
-    document.getElementById("galeria0").style.display = "none"
+    document.getElementById("galeria0").classList.remove("ativa")
 }
