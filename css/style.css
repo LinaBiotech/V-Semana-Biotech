@@ -327,10 +327,11 @@ header{
 .botoes-anteriores img:hover{
   transform: scale(1.1);
 }
-.botoes-anteriores p{
-  margin: 5px 20px 0 10px;
+.botoes-anteriores p, .botoes-anteriores span {
+  margin: 0px 20px 0 10px;
 }
 .titulo-subsection{
+  font-weight: bold;
   font-size: 2em;
 }
 .overlay-texto{
@@ -345,12 +346,34 @@ header{
 }
 
 @media (max-width: 768px){
-
-  
+  #edicoes-anteriores{
+    padding: 5% 8%;
+  }
+  .titulo-subsection{
+    font-size: 3em;
+  }
+  .botoes-anteriores span{
+    font-size: 1em;
+  }
 }
 @media (max-width: 480px){
-
+  #edicoes-anteriores{
+    padding: 5% 8%;
+  }
+  .titulo-subsection{
+    font-size: 2em;
+  }
+  .botoes-anteriores span{
+    font-size: 1em;
+  }
+  .overlay-texto{
+    align-items: center;
+  }
+  .botoes-anteriores p, .botoes-anteriores span {
+    margin: 0px;
+  }
 }
+
 
 
 
