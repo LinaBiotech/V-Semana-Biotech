@@ -38,3 +38,27 @@ function mostrarGaleria0(){
 function fechar0(){
     document.getElementById("galeria0").classList.remove("ativa")
 }
+
+function mostrarGaleria1(){
+    document.getElementById("galeria1").classList.add("ativa")
+}
+
+function fechar1(){
+    document.getElementById("galeria1").classList.remove("ativa")
+}
+
+function mostrarGaleria2(){
+    document.getElementById("galeria2").classList.add("ativa")
+}
+
+function fechar2(){
+    document.getElementById("galeria2").classList.remove("ativa")
+}
+
+function mostrarGaleria3(){
+    document.getElementById("galeria3").classList.add("ativa")
+}
+
+function fechar3(){
+    document.getElementById("galeria3").classList.remove("ativa")
+}
