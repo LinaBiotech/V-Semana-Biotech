@@ -702,11 +702,9 @@ border-radius:12px;
 }
 
 /* mapa arredondado */
-
 .mapa-container{
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
 .mapa-container iframe{
@@ -716,14 +714,7 @@ border-radius:12px;
 }
 
 /* endereço */
-
 .endereco{
     color: white;
     font-size: 16px;
-}
-
-/* imagem */
-
-.img-predio{
-    max-width: 320px;
 }
