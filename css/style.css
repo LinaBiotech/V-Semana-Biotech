@@ -452,7 +452,7 @@ header{
 .titulo-section {
   font-size: 3em;
   font-weight: bold;
-  margin: 10px;
+  margin: 10px 10px 10px 0;
 }
 
 .subtitulo-section {
@@ -697,7 +697,7 @@ border-radius:12px;
 
 
 /* section do mapa */
-.section-chegar{
+#section-chegar{
     background: linear-gradient(135deg, #7b1fa2, #9c27b0);
 }
 
