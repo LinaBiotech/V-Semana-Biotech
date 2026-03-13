@@ -693,3 +693,37 @@ border-radius:12px;
 .requisitos-box li{
   margin-bottom: 6px;
 }
+
+
+
+/* section do mapa */
+.section-chegar{
+    background: linear-gradient(135deg, #7b1fa2, #9c27b0);
+}
+
+/* mapa arredondado */
+
+.mapa-container{
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.mapa-container iframe{
+    width: 100%;
+    height: 260px;
+    border: none;
+}
+
+/* endereço */
+
+.endereco{
+    color: white;
+    font-size: 16px;
+}
+
+/* imagem */
+
+.img-predio{
+    max-width: 320px;
+}
