@@ -62,3 +62,4 @@ function mostrarGaleria3(){
 function fechar3(){
     document.getElementById("galeria3").classList.remove("ativa")
 }
+
