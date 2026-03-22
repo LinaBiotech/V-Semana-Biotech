@@ -1,0 +1,152 @@
+/*Formatação geral*/
+body{
+    font-family: 'Sora', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    background: #f7f7f7;
+    padding-top: 100px;
+}
+/*--NAVBAR--*/
+/* background roxo com hover*/
+.navbar{
+  background-color: #471477;
+  width: 100%;
+}
+.navbar:hover{
+  background-color: #471477;
+  transition: 0.5s;
+} 
+/*efeito da barra azul ao passar o mouse*/
+ .navbar .nav-link {
+  color: #fff;
+  margin: 0 5px;
+  display: block;
+  background: linear-gradient(aquamarine, aquamarine);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0 2px;
+  transition: background-size 1s ease;
+}
+.navbar .nav-link:hover{
+  animation: linha 1.3s forwards;
+} 
+/* animação vindo da esquerda para direita */
+@keyframes linha{
+  from{
+      background-size: 25% 2px;
+      background-position: left bottom;
+  }
+
+  to {
+        background-size: 100% 2px;
+        background-position: left bottom;
+  }
+}
+
+
+
+
+/* cards de patrocinadores */
+..patrocinadores-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.patrocinador-card {
+    width: 100%;
+    max-width: 50%;
+
+    background: #f9f9fb; 
+    padding: 25px;
+    border-radius: 16px;
+
+    position: relative;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin-bottom: 60px;
+
+    opacity: 0;
+    transition: all 0.8s ease;
+}
+
+.patrocinador-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 
+        0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* barra roxa */
+.patrocinador-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    border-radius: 10px;
+
+    background: linear-gradient(180deg, #7b2ff7, #a855f7);
+}
+
+.patrocinador-card .btn {
+    border-radius: 8px;
+    padding: 6px 14px;
+    background-color: #7b2ff7;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.logo-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #7b2ff7, #a855f7);
+
+    display: flex;
+    align-items: center;
+}
+
+.logo-box img {
+    width: 70%;
+}
+
+/* textos*/
+.patrocinador-card h5 {
+    font-weight: bold;
+}
+
+.categoria {
+    color: #7b2ff7;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+
+/* animações*/
+.patrocinador-card.left {
+  margin-right: auto;
+  transform: translateX(-120px);
+  left: 0;
+}
+
+.patrocinador-card.right {
+  margin-left: auto;
+  transform: translateX(120px);
+  right: 0;
+}
+
+/* justificando para direita ou esquerda */
+.patrocinador-card.right::before {
+  right: 0;
+}
+
+.patrocinador-card.left::before {
+  left: 0;
+}
+
+.patrocinador-card.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
