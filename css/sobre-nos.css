@@ -5,6 +5,20 @@ body{
     background: #f7f7f7;
     padding-top: 100px;
 }
+
+/*titulo geral*/
+.titulo-section {
+  font-size: 3em;
+  font-weight: bold;
+
+}
+
+.subtitulo-section {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
 /*--NAVBAR--*/
 /* background roxo com hover*/
 .navbar{
@@ -42,11 +56,58 @@ body{
   }
 }
 
+/* seção sobre */
+.sobre-section {
+    background: #f0f0f0f8;
+}
+
+/* imagem */
+.imagem-lina {
+    position: relative; 
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.img-sobre {
+    width: 80%;
+    height: 80%; 
+
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+
+
+/* título */
+.titulo-sobre {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* texto */
+.texto-sobre {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* números */
+.status h3 {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #7b2ff7;
+}
+
+.status p {
+    color: #666;
+}
 
 
 
 /* cards de patrocinadores */
-..patrocinadores-section {
+.patrocinadores-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,8 +130,9 @@ body{
     transition: all 0.8s ease;
 }
 
+/* hover */
 .patrocinador-card:hover {
-    transform: translateY(-15px);
+    transform: translateY(-10px);
     box-shadow: 
         0 15px 40px rgba(0,0,0,0.12);
 }
@@ -87,6 +149,7 @@ body{
     background: linear-gradient(180deg, #7b2ff7, #a855f7);
 }
 
+/* botão */
 .patrocinador-card .btn {
     border-radius: 8px;
     padding: 6px 14px;
@@ -96,21 +159,31 @@ body{
     box-shadow: none;
 }
 
-.logo-box {
-    width: 60px;
-    height: 60px;
-    border-radius: 14px;
-    background: linear-gradient(135deg, #7b2ff7, #a855f7);
+
+.logo-img {
+    width: 80px;
+    min-width: 80px;
 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.logo-box img {
-    width: 70%;
+.logo-img img {
+    width: 100%;
+    height: auto;
+    
+   
+    opacity: 0.8;
+    transition: 0.3s;
 }
 
-/* textos*/
+.patrocinador-card:hover .logo-img img {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* textos */
 .patrocinador-card h5 {
     font-weight: bold;
 }
@@ -121,22 +194,18 @@ body{
     font-size: 14px;
 }
 
-
-
-/* animações*/
+/* animações */
 .patrocinador-card.left {
   margin-right: auto;
   transform: translateX(-120px);
-  left: 0;
 }
 
 .patrocinador-card.right {
   margin-left: auto;
   transform: translateX(120px);
-  right: 0;
 }
 
-/* justificando para direita ou esquerda */
+/* barra esquerda/direita */
 .patrocinador-card.right::before {
   right: 0;
 }
@@ -145,8 +214,16 @@ body{
   left: 0;
 }
 
+.patrocinador-card.right {
+    text-align: right;
+}
+
+.patrocinador-card.right .d-flex {
+    flex-direction: row-reverse;
+}
+
+/* animação ao aparecer */
 .patrocinador-card.show {
   opacity: 1;
   transform: translateX(0);
 }
-
