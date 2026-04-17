@@ -1,0 +1,53 @@
+body{
+    font-family: 'Sora', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    background: #f7f7f7;
+}
+/*titulo geral*/
+.titulo-section {
+  font-size: 3em;
+  font-weight: bold;
+
+}
+.subtitulo-section {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/*--NAVBAR--*/
+/* background roxo com hover*/
+.navbar{
+  background-color: #471477;
+  width: 100%;
+}
+.navbar:hover{
+  background-color: #471477;
+  transition: 0.5s;
+} 
+/*efeito da barra azul ao passar o mouse*/
+ .navbar .nav-link {
+  color: #fff;
+  margin: 0 5px;
+  display: block;
+  background: linear-gradient(aquamarine, aquamarine);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 0 2px;
+  transition: background-size 1s ease;
+}
+.navbar .nav-link:hover{
+  animation: linha 1.3s forwards;
+} 
+/* animação vindo da esquerda para direita */
+@keyframes linha{
+  from{
+      background-size: 25% 2px;
+      background-position: left bottom;
+  }
+
+  to {
+        background-size: 100% 2px;
+        background-position: left bottom;
+  }
+}
