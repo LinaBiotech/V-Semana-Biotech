@@ -5,9 +5,8 @@ body{
 }
 /*titulo geral*/
 .titulo-section {
-  font-size: 3em;
+  font-size: clamp(1.8rem, 5vw, 3rem);
   font-weight: bold;
-
 }
 .subtitulo-section {
   font-weight: bold;
@@ -50,4 +49,18 @@ body{
         background-size: 100% 2px;
         background-position: left bottom;
   }
+}
+
+
+/*CATALOGO*/
+.card{
+  margin: clamp(4px, 1vw, 8px);
+  padding: clamp(4px, 0.8vw, 5px);
+  width: clamp(13rem, 22vw, 18rem);
+}
+
+#catalogo-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
