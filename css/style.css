@@ -15,7 +15,7 @@ header{
 
 /*--CAROUSEL--*/
 #carouselBiotechFade {
-  height: 800px;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -28,6 +28,7 @@ header{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .purple-opacity{
